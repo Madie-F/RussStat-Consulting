@@ -82,27 +82,6 @@ header h2 {
 	width: 100%;
 	text-align: center;
 }
-header nav {
-	margin: 0;
-	padding: 5px 0;
-	width: 100%;
-}
-header nav ul {
-	margin: 0;
-	padding: 0 0 0 0;
-}
-header nav ul li{
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: .875em;
-	padding: 10px 0;
-	list-style: none;
-	
-}
-header nav ul li a{
-	text-decoration: none;
-	color: black;
-}
 
 /*The widths are in a percentage!*/
 .main-title {
