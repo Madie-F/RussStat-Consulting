@@ -1,4 +1,4 @@
-/* nicked from rogue pikcings proj, is a mobile first setup,
+/* nicked from rogue pickings proj, is a mobile first setup,
 can just fill in what is needed for RussStat consulting*/
 
 html {
@@ -31,13 +31,14 @@ h3 {
 
 h1 {
 	color: #072776;
-	font-size: 1.75em;
+	font-size: 3.25em;
+	font-weight: 200;
 	width: 100%;
-	font-weight: bolder;
+	font-weight: medium;
 }
 
 h2 {
-	color: darkgray;
+	color: #072776;
 	font-size: 1.125em;
 	text-transform: uppercase;
 	text-align: center;
@@ -83,12 +84,12 @@ header h2 {
 }
 header nav {
 	margin: 0;
-	padding: 10px 0;
+	padding: 5px 0;
 	width: 100%;
 }
 header nav ul {
 	margin: 0;
-	padding: 5px 0 0 0;
+	padding: 0 0 0 0;
 }
 header nav ul li{
 	text-transform: uppercase;
@@ -118,7 +119,6 @@ header nav ul li a{
 }
 .main-image img { 
 	max-width: 100%;
-	height: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/greys-desk.jpg");
 	height: 50%;
 	background-position: center;
@@ -128,11 +128,22 @@ header nav ul li a{
 }
 .hero-text h1{
 	text-align: center;
-	position:absolute;
-	top: 10%;
+	position: absolute;
+	top: 8%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.hero-text h3 {
+	text-align: center;
+	position: absolute;
+	top: 12%;
+	left: 46%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+	color: black;
+	font-size: .875em;
+}
+
 .top-section, .bottom-section {
 	display: flex;
 	justify-content: center;
@@ -143,12 +154,12 @@ header nav ul li a{
 }
 
 .colleen-contact-img img{
-	height:auto;
+	height: auto;
 	max-width: 100%;
 }
-.mike-contact-img img {
+.mike-contact-img img{
 	height: auto;
-	max-width: 80%;
+	max-width: 100%;
 }
 
 /*The widths are in a percentage!*/
@@ -165,13 +176,17 @@ footer {
 footer span {
 	font-family: 'Sansita Swashed', cursive;
 	color: #072776;
-	text-transform: lowercase;
+	text-transform: capitalize;
 	font-size: 1.125em;
+}
+
+footer h3 {
+	text-align: center;
 }
 
 
 @media all and (min-width: 768px) {
-	.bottom-section {
+	.top-section .bottom-section {
 		justify-content: center;
 		align-items: center;
 		border-top: #eee;
