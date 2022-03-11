@@ -115,7 +115,7 @@ header h2 {
 .hero-text h3 {
 	text-align: center;
 	position: absolute;
-	top: 12%;
+	top: 10%;
 	left: 46%;
 	transform: translate(-50%, -50%);
 	text-decoration: none;
@@ -132,10 +132,18 @@ header h2 {
 	height: auto;
 }
 
+.half-width p {
+	text-align: center;
+}
+
+.half-width h3{
+	text-align: center;
+	padding-left: 0%;
+}
+
 .colleen-contact-img{
 	height: auto;
 	max-width: 100%;
-	padding-left: 9%;
 }
 
 .mike-contact-img img{
@@ -168,57 +176,62 @@ footer h3 {
 
 @media all and (min-width: 768px) {
 	h1{
-		font-size: 5em;
+		font-size: 7em;
 	}
 	h2{
 		font-size: 2em
 	}
 	h3{
 		font-size: 1em;
-		padding-left: 31px;
+		padding-left: 1.25em;
+		text-align: center;
 	}
 	p{
 		font-size: 1em;
 		line-height: 1.5em;
 		padding: 0 0 0 1.5em;
-		text-align: left;
-		margin-right: 0;
+		text-align: center;
 	}
-	.hero-text h3{
-		font-size: 1.5em;
+	.hero-text h1{
 		text-align: center;
 		position: absolute;
-		top: 12%;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.hero-text h3{
+		font-size: 2em;
+		text-align: center;
+		position: absolute;
+		top: 30%;
 		left: 48%;
 		transform: translate(-50%, -50%);
 		text-decoration: none;
 		color: black;
 	}
-	.top-section .bottom-section {
-		justify-content: center;
-		align-items: center;
-	}
 	.top-section h3{
 		width: 100%;
 	}
 	.half-width {
-		width: 45%;
+		width: 50%;
 		padding: 1em 0;
 		margin: 1em 0;
 		flex-flow: row wrap;
 	}
-	.colleen-contact-img, .mike-contact-img{
-		height: auto;
-		max-width: 100%;
-		padding-left: 50px;
+	.half-width h3{
+		text-align: center;
+	}
+	
+	.colleen-contact-img, .mike-contact-img{ 
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
 	}
 }
 
 @media all and (min-width: 1200px) {
-	p{
-		font-size: 1.125em;
-	}
-	
 	.hero-text h1{
 		font-size: 9em;
 		text-align: center;
@@ -238,13 +251,22 @@ footer h3 {
 		color: black;
 		font-size: 2.5em;
 	}
-	.colleen-contact-img, .mike-contact-img{
-		height: auto;
-		max-width: 100%;
-		padding-left: 30%;
-	}
 	h3{
 		font-size: 1em;
-		padding-left: 31px;
+		padding-left: 1.9375em;
+	}
+	.half-width h3{
+		text-align: center;
+	}
+	.half-width p{
+		font-size: 1.125em;
+		text-align: center;
+	}
+	.colleen-contact-img, .mike-contact-img{ 
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
 	}
 }
